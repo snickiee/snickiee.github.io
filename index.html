@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Voyage</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap" rel="stylesheet"> -->
+	<link rel="icon" href="css/images/icon.png" type="image/x-icon">
+</head>
+<body>
+	<div id="banner" class="banner">
+		
+			<nav class="header-line">
+				<img src="css/images/logo.svg" class="logo">
+				<img src="css/images/logo_mobile.svg" class="logo-mobile">
+				
+				<ul class="header-buttons">
+					<li class="nav-item"><a href="#banner">Главная</a></li>
+            <li class="nav-item"><a href="#hot-menu">Меню</a></li>
+            <li class="nav-item"><a href="#about-us">О нас</a></li>
+            <li class="nav-item"><a href="#footer">Контакты</a></li>
+				</ul>
+
+				<div class="burger-menu">
+					<div class="burger-icon" onclick="toggleMenu()">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+					</div>
+					<div class="mobile-menu">
+						<div class="close-btn" onclick="toggleMenu()">&times;</div>
+						<li class="nav-item"><a href="#banner">Главная</a></li>
+            <li class="nav-item"><a href="#hot-menu">Меню</a></li>
+            <li class="nav-item"><a href="#about-us">О нас</a></li>
+            <li class="nav-item"><a href="#footer">Контакты</a></li>
+					</div>
+			</div>
+				
+			</nav>
+
+			<div class="banner-title">
+				<div class="ellipse">
+					<img src="css/images/ellipse.svg">
+					<div class="star">
+						<img src="css/images/star.svg">
+					</div>
+				</div>
+				<div class="banner-title-text">
+					<div class="banner-upper-title">
+						Гавайская мечта
+					</div>
+		
+					<div class="banner-lower-title">
+						Отдохните от повседневной суеты и позвольте себе насладиться гавайской кухней в нашем заведении.
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="banner-button">
+				<a class="banner-btn" href="#footer">Забронировать столик</a>
+			</div>
+		
+	</div>
+
+	<div class="advantages">
+		<h2>
+			Наши преимущества
+		</h2>
+
+		<div class="advantages-row">
+			<div class="advantage">
+				<div class="advantage-blue">
+					РАЙ
+				</div>
+				<div class="advantage-black">
+					в каждом блюде
+				</div>
+			</div>
+
+			<div class="advantage">
+				<div class="advantage-blue">
+					БАР
+				</div>
+				<div class="advantage-black">
+					с экзотическими<br> напитками
+				</div>
+			</div>
+
+			<div class="advantage">
+				<div class="advantage-blue">
+					20+
+				</div>
+				<div class="advantage-black">
+					лет опыта и<br> традиций
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quote-block">
+			<p>
+				Наше меню, сервис и качество приготовления пищи отражают нашу приверженность к высоким стандартам и постоянному совершенствованию.
+			</p>
+
+			<div class="quote-button">
+				<a class="banner-btn" href="#about-us">Подробнее о нас</a>
+			</div>
+
+	</div>
+
+
+	<div id="hot-menu" class="hot-menu">
+		<div class="hot-menu-button">
+			<button id="scrollLeftButton">
+				<img src="css/images/left.svg">
+			</button>
+			<h2>Самые популярные блюда</h2>
+			<button id="scrollRightButton">
+				<img src="css/images/right.svg">
+			</button>
+		</div>
+		<div class="hot-menu-row">
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/ahi.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Ахи-поке</div>
+					<div class="hot-item-price">320р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/pizza.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Пицца с ананасами</div>
+					<div class="hot-item-price">420р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/item1.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Гавайский рис</div>
+					<div class="hot-item-price">250р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/rebra.png">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Рёбра по-гавайски</div>
+					<div class="hot-item-price">480р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/burger.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Гавайский бургер</div>
+					<div class="hot-item-price">520р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/lomi.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Ломи сэмон</div>
+					<div class="hot-item-price">250р</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="hot-menu-bar">
+		<div class="hot-menu-button">
+			<button id="scrollLeftButtonBar">
+				<img src="css/images/left.svg">
+			</button>
+			<h2>Гавайский бар</h2>
+			<button id="scrollRightButtonBar">
+				<img src="css/images/right.svg">
+			</button>
+		</div>
+		<div class="hot-menu-bar-row">
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/mai.png">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Май-тай</div>
+					<div class="hot-item-price">300р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/mangopng.png">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Мартини с манго</div>
+					<div class="hot-item-price">320р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/blue.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Пляжная мечта</div>
+					<div class="hot-item-price">220р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/surfer.png">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Сёрфер</div>
+					<div class="hot-item-price">220р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/pine.png">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Пина Колада</div>
+					<div class="hot-item-price">250р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/azure.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Лазурь</div>
+					<div class="hot-item-price">220р</div>
+				</div>
+			</div>
+	
+			<div class="hot-item-card">
+				<div class="hot-item-pic">
+					<img src="css/images/items/tiki.jpg">
+				</div>
+				<div class="hot-item-bottom">
+					<div class="hot-item-name">Тики-така</div>
+					<div class="hot-item-price">220р</div>
+				</div>
+			</div>
+		</div>
+		<div class="hot-menu-button">
+			<a class="banner-btn" href="#footer">Забронировать столик</a>
+		</div>
+		</div>
+		
+	</div>
+
+	<div class="critic-block">
+
+			<div class="critic-text">
+
+				<h2>Мнение критика</h2>
+				<p>"Le Voyage поразил меня своей удивительной атмосферой. Блюда, начиная от классического поке до изысканных ананасовых ребрышек, просто взрыв вкусов! Уютный интерьер, напоминающий о живописных пляжах Гавайев, обслуживание на высшем уровне, персонал дружелюбен и внимателен".</p>
+				<p>Александр Рататуй</p>
+
+				<div class="critic-stars">
+					<img src="css/images/critic-stars.svg" class="critic-stars-svg">
+				</div>
+
+			</div>
+
+			<div class="critic-photo">
+				<div>
+					<img src="css/images/critic.png">
+				</div>
+				
+			</div>
+
+	</div>
+
+	<div id="about-us" class="about-us">
+		<h2>Наша история</h2>
+		<p>
+			Le Voyage - уникальный ресторан гавайской кухни, где сочетаются свежие морепродукты, сочные фрукты и традиционные специи. Основанный в 1995 году Жан-Полем Лефевром, ресторан Le Voyage начал свой путь с маленького семейного бизнеса. С течением времени и ростом популярности, Le Voyage превратился в одно из самых известных мест для любителей гавайской кухни.
+		</p>
+
+		<div class="stripe">
+			<img src="css/images/stripe1.png">
+		</div>
+
+		<div class="stripe">
+			<img src="css/images/stripe2.png">
+		</div>
+
+		<div class="stripe">
+			<img src="css/images/stripe3.png">
+		</div>
+
+	</div>
+
+	<div class="staff">
+		<h2>Наши сотрудники</h2>
+
+		<div class="staff-grid">
+			<div class="worker">
+				<img class="worker-img" src="css/images/gleb1.png">
+				<div class="worker-name">Глеб Ким</div>
+				<div class="worker-title">Шеф-повар</div>
+			</div>
+
+			<div class="worker">
+				<img class="worker-img" src="css/images/ilya.png">
+				<div class="worker-name">Илья Иванов</div>
+				<div class="worker-title">Повар</div>
+			</div>
+
+			<div class="worker">
+				<img class="worker-img" src="css/images/aital.png">
+				<div class="worker-name">Айтал Егоров</div>
+				<div class="worker-title">Повар</div>
+			</div>
+
+			<div class="worker">
+				<img class="worker-img" src="css/images/rodion.png">
+				<div class="worker-name">Родион Зверев</div>
+				<div class="worker-title">Официант</div>
+			</div>
+
+			<div class="worker">
+				<img class="worker-img" src="css/images/stepan.png">
+				<div class="worker-name">Степан Котельников</div>
+				<div class="worker-title">Бармен</div>
+			</div>
+
+			<div class="worker">
+				<img class="worker-img" src="css/images/liza.png">
+				<div class="worker-name">Лиза Великасова</div>
+				<div class="worker-title">Администратор</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="footer-distributed">
+
+		<div class="footer-left">
+			<img src="css/images/logo.svg" class="footer-logo">
+
+				<p class="footer-links">
+						<a href="#banner">Главная</a>
+						|
+						<a href="#hot-menu">Меню</a>
+						|
+						<a href="#about-us">О нас</a>
+				</p>
+
+				<p class="footer-company-name">Copyright © 2024 <strong>Snickiee</strong></p>
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+					<span>Ресторан Le Voyage</span>
+					<strong>Владивосток, </strong> район "Центр", ул. Адмирала Фокина, 1А.
+			</p>
+			<div class="footer-icons">
+					<a href="#"><img class="instagram" src="css/images/Instagram.png"> </a>
+					<a href="#"><img class="instagram" src="css/images/vk.png"> </a>
+					<a href="#"><img class="instagram" src="css/images/WhatsApp.png"> </a>
+					<a href="#"><img class="instagram" src="css/images/Twitter.png"> </a>
+					<a href="#"><img class="instagram" src="css/images/Telegram.png"> </a>
+			</div>
+	</div>
+
+		<div class="footer-center">
+				<div>
+						<p><span>Контактные данные:</span></p>
+				</div>
+
+				<div>
+						<p>8 (908) 983-78-88</p>
+				</div>
+				<div>
+						<p><a href="mailto:gusuevon43@gmail.com">levoyage@gmail.com</a></p>
+				</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+	<script src="js/script.js"></script>
+</body>
+</html>

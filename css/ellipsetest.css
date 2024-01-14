@@ -1,0 +1,127 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color: black;
+}
+
+
+.banner{
+	width: 100%;
+	height: 80vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 10.83%, rgba(0, 0, 0, 0.00) 100%), url(images/bg1.jpg), lightgray 50% / cover no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-line{
+	padding-top: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.header-buttons{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 15vw;
+	list-style: none;
+}
+
+.nav-item{
+	margin-left: 5vw;
+
+	color: white;
+	text-decoration: none;
+	font-family: Raleway;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	transition: color 0.3s linear;
+}
+
+.nav-item a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-item a:hover{
+	color: #FF8948;
+}
+
+.banner-title {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.ellipse {
+  position: relative;
+  z-index: 0;
+}
+
+.star{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	motion-path: path('M834.543 64.3073C837.088 78.7405 829.036 95.0582 810.533 112.434C792.14 129.708 764.037 147.415 728.191 164.491C656.538 198.625 554.583 229.938 439.329 250.261C324.076 270.583 217.56 276.028 138.554 268.46C99.0288 264.674 66.5647 257.646 43.3723 247.705C20.0432 237.705 6.89523 225.126 4.35027 210.693C1.80531 196.26 9.85792 179.942 28.36 162.566C46.7537 145.293 74.8564 127.585 110.703 110.509C182.356 76.3754 284.31 45.0619 399.564 24.7396C514.818 4.41722 621.333 -1.02817 700.34 6.54015C739.865 10.3264 772.329 17.3541 795.521 27.2951C818.85 37.2947 831.998 49.8741 834.543 64.3073Z');
+	offset-path: path('M834.543 64.3073C837.088 78.7405 829.036 95.0582 810.533 112.434C792.14 129.708 764.037 147.415 728.191 164.491C656.538 198.625 554.583 229.938 439.329 250.261C324.076 270.583 217.56 276.028 138.554 268.46C99.0288 264.674 66.5647 257.646 43.3723 247.705C20.0432 237.705 6.89523 225.126 4.35027 210.693C1.80531 196.26 9.85792 179.942 28.36 162.566C46.7537 145.293 74.8564 127.585 110.703 110.509C182.356 76.3754 284.31 45.0619 399.564 24.7396C514.818 4.41722 621.333 -1.02817 700.34 6.54015C739.865 10.3264 772.329 17.3541 795.521 27.2951C818.85 37.2947 831.998 49.8741 834.543 64.3073Z');
+	animation: move 10s infinite ease-in-out;
+}
+
+@keyframes move {
+	0%{
+		motion-offset: 0%;
+		offset-distance: 0%;
+	}
+	100%{
+		motion-offset: 100%;
+		offset-distance: 100%;
+	}
+}
+
+
+
+
+.banner-title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.banner-upper-title {
+  color: #FFF;
+  white-space: nowrap;
+  font-family: Yeseva One;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 20;
+}
+
+.banner-lower-title {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  z-index: 30;
+}
